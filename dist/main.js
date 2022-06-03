@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const staff_1 = require("./staff");
+let staff = new staff_1.Staff("Staff 1", "staff@gmail.com", 20);
+let nameStaff = staff.getName();
+console.log(nameStaff);
+staff.setName("Staff 2");
+let currentNameStaff = staff.getName();
+console.log(currentNameStaff);
+console.log(staff._name);
